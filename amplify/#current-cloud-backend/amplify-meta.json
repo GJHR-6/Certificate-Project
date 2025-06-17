@@ -1,0 +1,64 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-certificateapp-dev-120343-authRole",
+      "UnauthRoleArn": "arn:aws:iam::204420864411:role/amplify-certificateapp-dev-120343-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::204420864411:role/amplify-certificateapp-dev-120343-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-certificateapp-dev-120343-deployment",
+      "UnauthRoleName": "amplify-certificateapp-dev-120343-unauthRole",
+      "StackName": "amplify-certificateapp-dev-120343",
+      "StackId": "arn:aws:cloudformation:us-east-1:204420864411:stack/amplify-certificateapp-dev-120343/cc130900-85e4-11ec-820b-0e8bbe18c713",
+      "AmplifyAppId": "d15oukw9oj1b9g"
+    }
+  },
+  "auth": {
+    "certificateapp9ed695c5": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL",
+          "NAME",
+          "PICTURE"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-certificateapp-dev-120343-deployment/amplify-cfn-templates/auth/certificateapp9ed695c5-cloudformation-template.json",
+        "logicalId": "authcertificateapp9ed695c5"
+      },
+      "lastPushTimeStamp": "2022-02-04T19:01:30.214Z",
+      "output": {
+        "UserPoolId": "us-east-1_jnBuLQsX0",
+        "AppClientIDWeb": "5pakb2u8ot9kglne3s6n67928b",
+        "AppClientID": "120rqhidqtl2dtpnglbic840nh",
+        "HostedUIDomain": "certificate-app-dev",
+        "IdentityPoolId": "us-east-1:35d34407-2e83-4f0a-b878-05c30159825b",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:204420864411:userpool/us-east-1_jnBuLQsX0",
+        "IdentityPoolName": "certificateapp9ed695c5_identitypool_9ed695c5__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
+        "UserPoolName": "certificateapp9ed695c5_userpool_9ed695c5"
+      },
+      "lastPushDirHash": "GRiiC6reasaX1st7/NCtAT7RpY4="
+    }
+  }
+}

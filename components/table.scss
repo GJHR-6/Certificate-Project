@@ -1,0 +1,159 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  //height: 100vh;
+  //justify-content: center;
+  //display: grid;
+  //align-items: center;
+  //font-size: 0.9rem;
+}
+
+.modal-90w{
+  min-width: 55%;
+}
+
+table {
+  //box-shadow: 0 5px 10px #aaa;
+  //overflow: hidden;
+  text-align: left;
+  white-space: nowrap;
+  table-layout: fixed;
+  border: 1px solid black;
+  box-shadow: 0 5px 10px #d3d3d3;
+  overflow-x: auto;
+
+  thead tr {
+    box-shadow: 0 5px 10px #d3d3d3;
+  }
+}
+
+table tbody th {
+  font-weight: bold;
+  //font-style: italic;
+  text-align: left;
+  position: relative;
+}
+
+th {
+  padding: 1em 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+td {
+  padding: 1em 2rem;
+}
+/////////////////table header fixed///////////////////////////////////
+table thead tr {
+  padding: 3px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 25vw;
+  background: white;
+  color: #e41f28;
+  text-align: center;
+}
+
+/////////////////////first column fixed////////////////////
+.table td:first-child {
+  position: sticky;
+  left: 0;
+  background: white;
+  color: black;
+  //z-index: 1;
+}
+
+.table thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: white;
+}
+////////////////////////////////////////////////////////////
+
+.table tbody tr {
+  font-size: 0.9rem;
+}
+
+.table td {
+  white-space: nowrap;
+}
+
+.table-title {
+  position: sticky;
+  left: 0;
+}
+
+.containerbuttons {
+  display: flex;
+  flex-direction: column; 
+  /* or inline-flex */
+}
+.App-filter {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  position: sticky;
+  left: 0;
+}
+
+.newEmployee {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  position: sticky;
+  left: 0%;
+  float: right;
+}
+
+.table-fixed {
+  display: block;
+  height: 600px;
+  overflow-y: auto;
+}
+
+.table-fixed thead > tr > th {
+  //font-size: 16px;
+  padding-left: 20px !important;
+}
+
+.vertical_position{
+  bottom: 5;
+}
+
+
+input {
+  position: relative;
+  display: inline-block;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+
+input#search[type="text"] {
+  width: 50%;
+  height: 30px;
+  outline: none;
+  border: 1px solid #aaa;
+  padding: 0 25px;
+  border-radius: 25px 25px 25px 25px;
+  box-sizing: border-box;
+  //font-size: 20px;
+}
+
+.custom-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.submit-button {
+  margin-top: 0.5rem;
+}

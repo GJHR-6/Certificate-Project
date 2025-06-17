@@ -1,0 +1,35 @@
+.navbar {
+	background-color: #282254;
+}
+
+.App-body {
+	padding-top: 60px;
+}
+
+/* fix padding under menu after resize */
+@media screen and (max-width: 767px) {
+	body {
+		padding-top: 60px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	body {
+		padding-top: 110px;
+	}
+}
+@media screen and (min-width: 992px) {
+	body {
+		padding-top: 65px;
+	}
+}
+.App-table {
+	margin-right: 3%;
+}
+
+.content-table {
+	font-size: 0.9em;
+}
+
+.App-welcome {
+	color: black;
+}
